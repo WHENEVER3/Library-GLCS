@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txtQu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단어: Example"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:id="@+id/bogi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보기 1"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+    <Button
+        android:id="@+id/bogi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보기 2"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/bogi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보기 3"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/bogi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보기 4"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="뒤로가기" />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:max="8000"
+        android:progress="8000"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>

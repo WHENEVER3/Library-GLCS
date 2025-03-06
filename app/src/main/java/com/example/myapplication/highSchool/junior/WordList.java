@@ -1,6 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.highSchool.junior;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.Word;
 
 import java.util.ArrayList;
 import java.util.Collections;

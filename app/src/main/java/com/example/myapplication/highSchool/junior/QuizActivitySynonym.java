@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.highSchool.junior;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.R;
+import com.example.myapplication.ResultActivity;
+import com.example.myapplication.highSchool.Synonym;
+import com.example.myapplication.highSchool.SynonymList;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

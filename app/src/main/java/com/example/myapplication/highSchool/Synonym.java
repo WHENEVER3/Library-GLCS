@@ -1,6 +1,4 @@
-package com.example.myapplication;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.myapplication.highSchool;
 
 public class Synonym {
     private String word;

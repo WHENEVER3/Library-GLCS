@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.highSchool.sophomore;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -13,7 +13,12 @@ import java.util.List;
 import android.media.MediaPlayer;
 import android.widget.ProgressBar;
 
-public class mean extends AppCompatActivity {
+import com.example.myapplication.R;
+import com.example.myapplication.ResultActivity;
+import com.example.myapplication.SettingsManger;
+import com.example.myapplication.Word;
+
+public class sophomoremean extends AppCompatActivity {
     private TextView txtQuestion;
     private Button btnOption1, btnOption2, btnOption3, btnOption4, back;
     private ProgressBar progressBar;
@@ -31,7 +36,7 @@ public class mean extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mean);
+        setContentView(R.layout.sophomoremean);
 
         settingsManager = new SettingsManger(this);
 
@@ -44,7 +49,7 @@ public class mean extends AppCompatActivity {
         initializeMedia();  // 🔹 소리 관련 요소 초기화
 
         // 🔹 퀴즈 단어 리스트 불러오기
-        quizWords = WordList.getShuffledWords();
+        quizWords = sophomorewordlist.getShuffledWords();
         if (quizWords == null || quizWords.isEmpty()) {
             Toast.makeText(this, "퀴즈 문제가 없습니다!", Toast.LENGTH_LONG).show();
             finish();
@@ -56,7 +61,7 @@ public class mean extends AppCompatActivity {
         // 🔹 뒤로가기 버튼 클릭 시 종료 (결과 화면 이동 방지)
         back.setOnClickListener(view -> {
             exitFlag = true; // 🔹 back 버튼이 눌렸음을 표시
-            Toast.makeText(mean.this, "퀴즈를 종료합니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(sophomoremean.this, "퀴즈를 종료합니다.", Toast.LENGTH_SHORT).show();
             finish(); // 현재 액티비티 종료
         });
     }
@@ -69,15 +74,15 @@ public class mean extends AppCompatActivity {
 
     // 🔹 UI 요소 초기화
     private void initializeViews() {
-        progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar2);
         progressBar.setMax(quizTime); // 🔹 설정한 제한 시간에 맞게 progressBar 최대값 설정
 
-        txtQuestion = findViewById(R.id.txtQuestion);
-        btnOption1 = findViewById(R.id.btnOption1);
-        btnOption2 = findViewById(R.id.btnOption2);
-        btnOption3 = findViewById(R.id.btnOption3);
-        btnOption4 = findViewById(R.id.btnOption4);
-        back = findViewById(R.id.back);
+        txtQuestion = findViewById(R.id.txtQu);
+        btnOption1 = findViewById(R.id.bogi);
+        btnOption2 = findViewById(R.id.bogi2);
+        btnOption3 = findViewById(R.id.bogi3);
+        btnOption4 = findViewById(R.id.bogi4);
+        back = findViewById(R.id.d);
     }
 
     // 🔹 오디오 파일 초기화
@@ -149,10 +154,10 @@ public class mean extends AppCompatActivity {
 
             if (answer.equals(currentWord.getMeaning())) {
                 score++;
-                Toast.makeText(mean.this, "정답!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(sophomoremean.this, "정답!", Toast.LENGTH_SHORT).show();
                 if (isSoundEnabled && correctSound != null) correctSound.start();
             } else {
-                Toast.makeText(mean.this, "오답!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(sophomoremean.this, "오답!", Toast.LENGTH_SHORT).show();
                 if (isSoundEnabled && wrongSound != null) wrongSound.start();
             }
 
@@ -184,7 +189,7 @@ public class mean extends AppCompatActivity {
     // 🔹 결과 화면 이동 (back 버튼이 눌리지 않은 경우만)
     private void moveToResultScreen() {
         if (!exitFlag) { // 🔹 back 버튼이 눌리지 않았을 때만 실행
-            Intent intent = new Intent(mean.this, ResultActivity.class);
+            Intent intent = new Intent(sophomoremean.this, ResultActivity.class);
             intent.putExtra("SCORE", score);
             startActivity(intent);
             finish();

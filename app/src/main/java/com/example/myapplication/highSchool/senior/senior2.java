@@ -1,4 +1,4 @@
-package com.example.myapplication.highSchool;
+package com.example.myapplication.highSchool.senior;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,16 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.myapplication.R;
-import com.example.myapplication.SubActivity;
-import com.example.myapplication.highSchool.junior.freshman2;
-import com.example.myapplication.highSchool.senior.senior2;
-import com.example.myapplication.highSchool.sophomore.sophomore;
+import com.example.myapplication.highSchool.high;
 
-public class high extends AppCompatActivity {
+public class senior2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.high);
+        setContentView(R.layout.senior2);
 
         // 액션바에서 뒤로가기 버튼 활성화
         if (getSupportActionBar() != null) {
@@ -25,11 +22,11 @@ public class high extends AppCompatActivity {
         }
 
         // 버튼 ID 배열
-        int[] buttonIds = {R.id.btn16, R.id.btn17, R.id.btn18};
+        int[] buttonIds = {R.id.btnr, R.id.btnr2};
 
         // 버튼이 이동할 액티비티 클래스 배열
         Class<?>[] activities = {
-                freshman2.class, sophomore.class, senior2.class
+                senior2mean.class, senior2synonym.class
         };
 
         // 버튼 클릭 리스너 설정 (for 문 사용)
@@ -47,11 +44,11 @@ public class high extends AppCompatActivity {
         }
 
         // 뒤로가기 버튼 (btn11) 추가 - SubActivity로 이동
-        Button backButton = findViewById(R.id.btn19);
+        Button backButton = findViewById(R.id.back3);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity.class);
+                Intent intent = new Intent(getApplicationContext(), high.class);
                 startActivity(intent);
             }
         });
@@ -72,4 +69,5 @@ public class high extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

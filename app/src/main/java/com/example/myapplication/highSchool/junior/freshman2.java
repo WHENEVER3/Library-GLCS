@@ -1,4 +1,4 @@
-package com.example.myapplication.highSchool;
+package com.example.myapplication.highSchool.junior;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myapplication.QuizActivitySynonym;
 import com.example.myapplication.R;
-import com.example.myapplication.mean;
+import com.example.myapplication.highSchool.high;
 
 public class freshman2 extends AppCompatActivity {
     @Override
