@@ -51,4 +51,12 @@
         android:padding="10dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/synb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="뒤로가기" />
+
 </LinearLayout>

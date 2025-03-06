@@ -34,15 +34,18 @@
         <activity android:name=".middle.freshman1"/>
         <activity android:name=".middle.sophomor"/>
         <activity android:name=".middle.senior"/>
-        <activity android:name=".highSchool.senior2"/>
-        <activity android:name=".highSchool.sophomore"/>
-        <activity android:name=".highSchool.freshman2"/>
-        <activity android:name=".mean"/>
+        <activity android:name=".highSchool.senior.senior2"/>
+        <activity android:name=".highSchool.sophomore.sophomore"/>
+        <activity android:name=".highSchool.junior.freshman2"/>
+        <activity android:name=".highSchool.junior.mean"/>
         <activity android:name=".ResultActivity"/>
-        <activity android:name=".WordList"/>
-        <activity android:name=".SynonymList"/>
-        <activity android:name=".QuizActivitySynonym"/>
+        <activity android:name=".highSchool.junior.WordList"/>
+        <activity android:name=".highSchool.SynonymList"/>
+        <activity android:name=".highSchool.junior.QuizActivitySynonym"/>
         <activity android:name=".settings"/>
+        <activity android:name=".highSchool.senior.senior2mean"/>
+        <activity android:name=".highSchool.sophomore.sophomoremean"/>
+
     </application>
 
 </manifest>
