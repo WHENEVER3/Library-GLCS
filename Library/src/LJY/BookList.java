@@ -60,8 +60,12 @@ public class BookList {
 
     public List<Book> searchBooksByKeyword(String keyword) {
         List<Book> results = new ArrayList<>();
+        // 검색어의 공백 제거 및 소문자 변환
+        String normalizedKeyword = keyword.replace(" ", "").toLowerCase();
         for (Book book : bookDatabase.values()) {
-            if (book.title.contains(keyword)) {
+            // 책 제목의 공백 제거 및 소문자 변환
+            String normalizedTitle = book.title.replace(" ", "").toLowerCase();
+            if (normalizedTitle.contains(normalizedKeyword)) {
                 results.add(book);
             }
         }
