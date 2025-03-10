@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Library.main:jar">
+    <output-path>$USER_HOME$/OneDrive/바탕 화면/My</output-path>
+    <root id="archive" name="Library.main.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/OneDrive/바탕 화면/My/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Library.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/eeeb68631711256418dfbb47b11c731b6c8f6235/javax.websocket-api-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-spi/1.19/769554159b0fed1580247190164badbffe16e13e/tyrus-spi-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-client/1.19/4dede9a0770269a56ca832a18496eb052ec5cc0/tyrus-client-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-server/1.19/9af0a4ae38a50c709456630d47c592e98d5e4007/tyrus-server-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-container-grizzly-client/1.19/94d62dc396df20c03060880fb039093c545c6a05/tyrus-container-grizzly-client-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http/2.4.4/c789d449906458d4174126f6a4fefdd7a6008777/grizzly-http-2.4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-core/1.19/21773bfed5cd77a4b05158d0c0bc7f451e7a080a/tyrus-core-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.tyrus/tyrus-container-grizzly-server/1.19/9fde68f1030d4fecad10c6f801fdf25df1823b81/tyrus-container-grizzly-server-1.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-framework/2.4.4/85ff29df39616972a074737948f116ef25addfee/grizzly-framework-2.4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.grizzly/grizzly-http-server/2.4.4/f9a62c711eb51f351cc5ba48faf44d5a49faa0a7/grizzly-http-server-2.4.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
